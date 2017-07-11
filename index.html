@@ -1,0 +1,735 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- Compatible 兼容最新版本 ie -->
+    <meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=no">
+    <!-- 快捷键 ： link:favicon -->
+    <!-- <link rel="shortcut icon" type="image/x-icon" href="favicon.ico"> -->
+    <!-- viewport 声明网页在移动端相关设置  
+		移动设备中，设备宽度超出设备，
+		width=device-width，宽度适应设备宽度
+		initial-scale=1  初始化缩放
+		user-scalable  是否允许用户缩放（值：yes/no; 1/0）
+		minimun-scale:最小缩放initial-scale
+     -->
+    <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+    <title>Bootstrap 101 Template</title>
+
+    <!-- Bootstrap -->
+    <link href="lib/bootstrap/css/bootstrap.css" rel="stylesheet">
+    <!-- 自定义公共css -->
+     <link href="css/main.css" rel="stylesheet">
+    
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+
+    <!-- 条件注释  -->
+    <!-- 版本小于ie9，加载 js脚本  -->
+    <!-- [if lt IE 9]>
+      让低版本浏览器可以识别HTML5的新标签，如header、footer、section等
+      <script src="lib/html5shiv/html5shiv-printshiv.js"></script>
+      让低版本浏览器可以支持CSS媒体查询功能
+      <script src="lib/respond/respond.min.js"></script>
+    <![endif] -->
+  </head>
+  <body>
+     <!-- #header -->
+     <header id="header" >
+       <!-- <div class="topbar hidden-sm">  小于 sm 就隐藏-->
+       
+       <div class="topbar visible-lg-block" ><!-- 大于lg 就显示 -->
+       <!-- 自适应版心 -->
+         <div class="container">
+         <!-- 行 -->
+          <div class="row">
+            <div class="col-md-2 text-center">
+               <a href="#" class="mobile-link">
+                <i class="icon-mobilephone"></i>
+                <span >手机微金所</span>
+                <i class="glyphicon glyphicon-chevron-down"></i>
+                <img src="img/c_06.jpg" alt="扫一扫">
+               </a>
+            </div>
+            <div class="col-md-5 text-center">
+                <i class="icon-telephone"></i>
+                <span>4006-89-4006（服务时间：9:00-21:00）</span>
+            </div>
+            <div class="col-md-2 text-center">
+                <a href="#">常见问题</a>
+                <a href="#">财富登录</a>
+            </div>
+            <div class="col-md-3 text-center">
+                <a href="#" type="button" class="btn btn-weijinsuo btn-sm">免费注册</a>
+                <a href="#" class="btn btn-link btn-sm">登录</a>
+            </div>
+          </div>
+         </div>
+       </div>
+       <!-- 导航栏 -->
+       <nav id="fixed" class="navbar navbar-weijinsuo"  data-spy="affix" data-offset-top="60" data-offset-bottom="200">
+          <div class="container">
+            <div class="navbar-header">
+            <!-- data-target="#bs-example-navbar-collapse-1" 作为指向 -->
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                <!-- scroll-only  移动端专用 -->
+                <span class="sr-only">切换菜单</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <!-- a标签 防止 品牌logo -->
+              <a class="navbar-brand" href="#"> 
+                <i class="icon-icon"></i>
+                <i class="icon-logo"></i>
+              </a>    
+            </div>
+            <!-- 折叠菜单div  -->
+            <!-- <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-6"> -->
+             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+              <ul class="nav navbar-nav">
+                <li class="active"><a href="#">我要投资</a></li>
+                <li><a href="#">我要借款</a></li>
+                <li><a href="#">平台介绍</a></li>
+                <li><a href="#">新手专区</a></li>
+                <li><a href="#">最新动态</a></li>
+                <li><a href="#">微论坛</a></li>
+              </ul>
+              <!-- 小于 sm 隐藏 个人中心 -->
+              <ul class="nav navbar-nav navbar-right hidden-sm">
+                <li><a href="#">个人中心</a></li>
+              </ul>
+            </div>
+        </nav>
+     </header>
+     <!-- /#header -->
+     <!-- 广告轮播 -->
+     <section id="ad_main" class="carousel slide" data-ride="carousel">
+          <!-- Indicators -->
+          <ol class="carousel-indicators">
+            <li data-target="#ad_main" data-slide-to="0" class="active"></li>
+            <li data-target="#ad_main" data-slide-to="1"></li>
+            <li data-target="#ad_main" data-slide-to="2"></li>
+          </ol>
+
+          <!-- Wrapper for slides -->
+          <div class="carousel-inner" role="listbox">
+            <div class="item active" data-bg-lg="img/slide_01_2000x410.jpg"
+             data-bg-sm="img/slide_01_640x340.jpg">
+              <!-- <img src="" alt="..."> -->
+              <!-- 轮播图 标题 
+              <div class="carousel-caption">
+                ...
+              </div>-->
+            </div>
+            <div class="item" data-bg-lg="img/slide_02_2000x410.jpg"
+            data-bg-sm="img/slide_02_640x340.jpg">
+              <!-- <img src="img/slide_02_2000x410.jpg" alt="..."> -->
+              <!-- <div class="carousel-caption">
+                ...
+              </div> -->
+            </div>
+            <div class="item"  data-bg-lg="img/slide_03_2000x410.jpg"
+            data-bg-sm="img/slide_03_640x340.jpg">
+              <!-- <img src="img/slide_03_2000x410.jpg" alt="..."> -->
+              <!-- <div class="carousel-caption">
+                ...
+              </div> -->
+            </div>
+          </div>
+
+          <!-- Controls -->
+          <a class="left carousel-control" href="#ad_main" role="button" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="right carousel-control" href="#ad_main" role="button" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
+     </section>
+     <!-- /广告轮播 -->
+     <!-- 特色介绍 -->
+     <section id="tese">
+         <div class="container">
+             <div class="row">
+                 <div class="col-md-4 col-xs-6">
+                     <a href="#">
+                        <div class="media">
+                          <div class="media-left">
+                              <i class="icon-uniE907"></i>
+                          </div>
+                          <div class="media-body">
+                            <h4 class="media-heading">支付交易保障</h4>
+                            <p>银联支付全称保证支付安全</p>
+                          </div>
+                        </div>
+                     </a>
+                 </div>
+                 <div class="col-md-4 col-xs-6">
+                     <a href="#">
+                         <div class="media">
+                          <div class="media-left">
+                              <i class="icon-uniE907"></i>
+                          </div>
+                          <div class="media-body">
+                            <h4 class="media-heading">支付交易保障</h4>
+                            <p>银联支付全称保证支付安全</p>
+                          </div>
+                         </div>
+                     </a>
+                 </div>
+                 <div class="col-md-4 col-xs-6">
+                     <a href="#">
+                         <div class="media">
+                          <div class="media-left">
+                              <i class="icon-uniE907"></i>
+                          </div>
+                          <div class="media-body">
+                            <h4 class="media-heading">支付交易保障</h4>
+                            <p>银联支付全称保证支付安全</p>
+                          </div>
+                         </div>
+                     </a>
+                 </div>
+                 <div class="col-md-4 col-xs-6">
+                     <a href="#">
+                         <div class="media">
+                          <div class="media-left">
+                              <i class="icon-uniE907"></i>
+                          </div>
+                          <div class="media-body">
+                            <h4 class="media-heading">支付交易保障</h4>
+                            <p>银联支付全称保证支付安全</p>
+                          </div>
+                         </div>
+                     </a>
+                 </div>
+                 <div class="col-md-4 col-xs-6">
+                     <a href="#">
+                         <div class="media">
+                          <div class="media-left">
+                              <i class="icon-uniE907"></i>
+                          </div>
+                          <div class="media-body">
+                            <h4 class="media-heading">支付交易保障</h4>
+                            <p>银联支付全称保证支付安全</p>
+                          </div>
+                         </div>
+                     </a>
+                 </div>
+                 <div class="col-md-4 col-xs-6">
+                     <a href="#">
+                         <div class="media">
+                          <div class="media-left">
+                              <i class="icon-uniE907"></i>
+                          </div>
+                          <div class="media-body">
+                            <h4 class="media-heading">支付交易保障</h4>
+                            <p>银联支付全称保证支付安全</p>
+                          </div>
+                         </div>
+                     </a>
+                 </div>
+             </div>
+         </div>
+     </section>
+     <!-- /特色介绍 -->
+     <!-- 立即预约 -->
+     <section  id="subscribe">
+         <div class="container">
+             <p class="pull-left">
+             <i class="icon-uniE906"></i>
+             现在有<span>458</span>人在排队，累计预约交易成功<span>7409</span>次。 什么是预约投标？<a href="#">立即预约</a></p>
+             <p class="pull-right">
+                 <a href="#">
+                     <i class="icon-uniE905"></i>
+                     微金所企业宣传片
+                 </a>
+             </p>
+         </div>
+     </section>
+     <!-- /立即预约 -->
+     <!-- 产品推荐 -->
+     <section id="products">
+         <div class="container">
+             <div>
+          <!-- Nav tabs -->
+          <div class="nav-tabs-wrapper">
+              <ul class="nav nav-tabs" role="tablist">
+            <li role="presentation" class="active">
+                <a href="#tab1" aria-controls="tab1" role="tab" data-toggle="tab">特别推荐</a>
+            </li>
+            <li role="presentation"><a href="#tab2" aria-controls="tab2" role="tab" data-toggle="tab">微投资</a></li>
+            <li role="presentation"><a href="#tab3" aria-controls="tab3" role="tab" data-toggle="tab">微小宝</a></li>
+            <li role="presentation"><a href="#tab4" aria-controls="tab4" role="tab" data-toggle="tab">微消费</a></li>
+            <li role="presentation"><a href="#tab5" aria-controls="tab5" role="tab" data-toggle="tab">微增利</a></li>
+            <li role="presentation"><a href="#tab6" aria-controls="tab6" role="tab" data-toggle="tab">微金宝</a></li>
+            <li role="presentation"><a href="#tab7" aria-controls="tab7" role="tab" data-toggle="tab">微转让</a></li>
+             <li role="presentation" class=" hidden-sm hidden-xs pull-right"><a href="#tab7" aria-controls="tab7" role="tab" data-toggle="tab">更多</a></li>
+          </ul>
+
+          </div>
+
+          <!-- Tab 内容 -->
+          <div class="tab-content">
+            <div role="tabpanel" class="tab-pane active fade in" id="tab1">
+                <div class="row">
+                    <div class="col-xs-12 col-md-6 col-lg-4">
+                        <div class="panel panel-weijinsuo clearfix bg-red active">
+                          <div class="panel-heading">
+                              <p class="panel-heading-p">
+                                <strong>8</strong><sub>%</sub>
+                                <br/><span>年利率</span>
+                              </p>
+                          </div>
+                          <div class="panel-body">
+                            <h5>新手体验标0650期</h5>
+                            <div class="row col-xs-6">
+                            <dd>起投金额(元)</dd>
+                            <dt>0.01<span>万</span></dt>
+                            </div>
+                            <div class="row col-xs-6">
+                            <dd>起投金额(元)</dd>
+                            <dt>0.01<span>万</span></dt>
+                            </div>
+                            <div class="row col-xs-6">
+                            <dd>起投金额(元)</dd>
+                            <dt>0.01<span>万</span></dt>
+                            </div>
+                            <div class="row col-xs-6">
+                            <dd>起投金额(元)</dd>
+                            <dt>0.01<span>万</span></dt>
+                            </div>
+                          </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-md-6 col-lg-4">
+                        <div class="panel panel-weijinsuo state-one clearfix bg-gray ">
+                          <div class="panel-heading">
+                              <p class="panel-heading-p">
+                                <strong>8</strong><sub>%</sub>
+                                <br/><span>年利率</span>
+                              </p>
+                          </div>
+                          <div class="panel-body">
+                            <h5>新手体验标0650期</h5>
+                            <div class="row col-xs-6">
+                            <dd>起投金额(元)</dd>
+                            <dt>0.01<span>万</span></dt>
+                            </div>
+                            <div class="row col-xs-6">
+                            <dd>起投金额(元)</dd>
+                            <dt>0.01<span>万</span></dt>
+                            </div>
+                            <div class="row col-xs-6">
+                            <dd>起投金额(元)</dd>
+                            <dt>0.01<span>万</span></dt>
+                            </div>
+                            <div class="row col-xs-6">
+                            <dd>起投金额(元)</dd>
+                            <dt>0.01<span>万</span></dt>
+                            </div>
+                          </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-md-6 col-lg-4">
+                        <div class="panel panel-weijinsuo clearfix bg-gray ">
+                          <div class="panel-heading">
+                              <p class="panel-heading-p">
+                                <strong>8</strong><sub>%</sub>
+                                <br/><span>年利率</span>
+                              </p>
+                          </div>
+                          <div class="panel-body">
+                            <h5>新手体验标0650期</h5>
+                            <div class="row col-xs-6">
+                            <dd>起投金额(元)</dd>
+                            <dt>0.01<span>万</span></dt>
+                            </div>
+                            <div class="row col-xs-6">
+                            <dd>起投金额(元)</dd>
+                            <dt>0.01<span>万</span></dt>
+                            </div>
+                            <div class="row col-xs-6">
+                            <dd>起投金额(元)</dd>
+                            <dt>0.01<span>万</span></dt>
+                            </div>
+                            <div class="row col-xs-6">
+                            <dd>起投金额(元)</dd>
+                            <dt>0.01<span>万</span></dt>
+                            </div>
+                          </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-md-6 col-lg-4">
+                        <div class="panel panel-weijinsuo clearfix bg-gray ">
+                          <div class="panel-heading">
+                              <p class="panel-heading-p">
+                                <strong>8</strong><sub>%</sub>
+                                <br/><span>年利率</span>
+                              </p>
+                          </div>
+                          <div class="panel-body">
+                            <h5>新手体验标0650期</h5>
+                            <div class="row col-xs-6">
+                            <dd>起投金额(元)</dd>
+                            <dt>0.01<span>万</span></dt>
+                            </div>
+                            <div class="row col-xs-6">
+                            <dd>起投金额(元)</dd>
+                            <dt>0.01<span>万</span></dt>
+                            </div>
+                            <div class="row col-xs-6">
+                            <dd>起投金额(元)</dd>
+                            <dt>0.01<span>万</span></dt>
+                            </div>
+                            <div class="row col-xs-6">
+                            <dd>起投金额(元)</dd>
+                            <dt>0.01<span>万</span></dt>
+                            </div>
+                          </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-md-6 col-lg-4">
+                        <div class="panel panel-weijinsuo clearfix bg-gray ">
+                          <div class="panel-heading">
+                              <p class="panel-heading-p"> 
+                                <strong>8</strong><sub>%</sub>
+                                <br/><span>年利率</span>
+                              </p>
+                          </div>
+                          <div class="panel-body">
+                            <h5>新手体验标0650期</h5>
+                            <div class="row col-xs-6">
+                            <dd>起投金额(元)</dd>
+                            <dt>0.01<span>万</span></dt>
+                            </div>
+                            <div class="row col-xs-6">
+                            <dd>起投金额(元)</dd>
+                            <dt>0.01<span>万</span></dt>
+                            </div>
+                            <div class="row col-xs-6">
+                            <dd>起投金额(元)</dd>
+                            <dt>0.01<span>万</span></dt>
+                            </div>
+                            <div class="row col-xs-6">
+                            <dd>起投金额(元)</dd>
+                            <dt>0.01<span>万</span></dt>
+                            </div>
+                          </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-md-6 col-lg-4">
+                        <div class="panel panel-weijinsuo clearfix bg-gray ">
+                          <div class="panel-heading">
+                              <div class="tooltips">
+                                  <span data-toggle="tooltip" data-placement="left" title="北京">京</span>
+                                  <span data-toggle="tooltip" data-placement="right" title="实战">实</span>
+                              </div>
+                              <p class="panel-heading-p">
+                                <strong>8</strong><sub>%</sub>
+                                <br/><span>年利率</span>
+                              </p>
+                          </div>
+                          <div class="panel-body">
+                            <h5>新手体验标0650期</h5>
+                            <div class="row col-xs-6">
+                            <dd>起投金额(元)</dd>
+                            <dt>0.01<span>万</span></dt>
+                            </div>
+                            <div class="row col-xs-6">
+                            <dd>起投金额(元)</dd>
+                            <dt>0.01<span>万</span></dt>
+                            </div>
+                            <div class="row col-xs-6">
+                            <dd>起投金额(元)</dd>
+                            <dt>0.01<span>万</span></dt>
+                            </div>
+                            <div class="row col-xs-6">
+                            <dd>起投金额(元)</dd>
+                            <dt>0.01<span>万</span></dt>
+                            </div>
+                          </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div role="tabpanel" class="tab-pane fade" id="tab2"><div class="row">
+                    <div class="col-xs-12 col-md-6 col-lg-4">
+                        <div class="panel panel-weijinsuo clearfix bg-red active">
+                          <div class="panel-heading">
+                              <p class="panel-heading-p">
+                                <strong>8</strong><sub>%</sub>
+                                <br/><span>年利率</span>
+                              </p>
+                          </div>
+                          <div class="panel-body">
+                            <h5>新手体验标0650期</h5>
+                            <div class="row col-xs-6">
+                            <dd>起投金额(元)</dd>
+                            <dt>0.01<span>万</span></dt>
+                            </div>
+                            <div class="row col-xs-6">
+                            <dd>起投金额(元)</dd>
+                            <dt>0.01<span>万</span></dt>
+                            </div>
+                            <div class="row col-xs-6">
+                            <dd>起投金额(元)</dd>
+                            <dt>0.01<span>万</span></dt>
+                            </div>
+                            <div class="row col-xs-6">
+                            <dd>起投金额(元)</dd>
+                            <dt>0.01<span>万</span></dt>
+                            </div>
+                          </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-md-6 col-lg-4">
+                        <div class="panel panel-weijinsuo clearfix bg-gray ">
+                          <div class="panel-heading">
+                              <p class="panel-heading-p">
+                                <strong>8</strong><sub>%</sub>
+                                <br/><span>年利率</span>
+                              </p>
+                          </div>
+                          <div class="panel-body">
+                            <h5>新手体验标0650期</h5>
+                            <div class="row col-xs-6">
+                            <dd>起投金额(元)</dd>
+                            <dt>0.01<span>万</span></dt>
+                            </div>
+                            <div class="row col-xs-6">
+                            <dd>起投金额(元)</dd>
+                            <dt>0.01<span>万</span></dt>
+                            </div>
+                            <div class="row col-xs-6">
+                            <dd>起投金额(元)</dd>
+                            <dt>0.01<span>万</span></dt>
+                            </div>
+                            <div class="row col-xs-6">
+                            <dd>起投金额(元)</dd>
+                            <dt>0.01<span>万</span></dt>
+                            </div>
+                          </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-md-6 col-lg-4">
+                        <div class="panel panel-weijinsuo clearfix bg-gray ">
+                          <div class="panel-heading">
+                              <p class="panel-heading-p">
+                                <strong>8</strong><sub>%</sub>
+                                <br/><span>年利率</span>
+                              </p>
+                          </div>
+                          <div class="panel-body">
+                            <h5>新手体验标0650期</h5>
+                            <div class="row col-xs-6">
+                            <dd>起投金额(元)</dd>
+                            <dt>0.01<span>万</span></dt>
+                            </div>
+                            <div class="row col-xs-6">
+                            <dd>起投金额(元)</dd>
+                            <dt>0.01<span>万</span></dt>
+                            </div>
+                            <div class="row col-xs-6">
+                            <dd>起投金额(元)</dd>
+                            <dt>0.01<span>万</span></dt>
+                            </div>
+                            <div class="row col-xs-6">
+                            <dd>起投金额(元)</dd>
+                            <dt>0.01<span>万</span></dt>
+                            </div>
+                          </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-md-6 col-lg-4">
+                        <div class="panel panel-weijinsuo clearfix bg-gray ">
+                          <div class="panel-heading">
+                              <p class="panel-heading-p">
+                                <strong>8</strong><sub>%</sub>
+                                <br/><span>年利率</span>
+                              </p>
+                          </div>
+                          <div class="panel-body">
+                            <h5>新手体验标0650期</h5>
+                            <div class="row col-xs-6">
+                            <dd>起投金额(元)</dd>
+                            <dt>0.01<span>万</span></dt>
+                            </div>
+                            <div class="row col-xs-6">
+                            <dd>起投金额(元)</dd>
+                            <dt>0.01<span>万</span></dt>
+                            </div>
+                            <div class="row col-xs-6">
+                            <dd>起投金额(元)</dd>
+                            <dt>0.01<span>万</span></dt>
+                            </div>
+                            <div class="row col-xs-6">
+                            <dd>起投金额(元)</dd>
+                            <dt>0.01<span>万</span></dt>
+                            </div>
+                          </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-md-6 col-lg-4">
+                        <div class="panel panel-weijinsuo clearfix bg-gray ">
+                          <div class="panel-heading">
+                              <p class="panel-heading-p">
+                                <strong>8</strong><sub>%</sub>
+                                <br/><span>年利率</span>
+                              </p>
+                          </div>
+                          <div class="panel-body">
+                            <h5>新手体验标0650期</h5>
+                            <div class="row col-xs-6">
+                            <dd>起投金额(元)</dd>
+                            <dt>0.01<span>万</span></dt>
+                            </div>
+                            <div class="row col-xs-6">
+                            <dd>起投金额(元)</dd>
+                            <dt>0.01<span>万</span></dt>
+                            </div>
+                            <div class="row col-xs-6">
+                            <dd>起投金额(元)</dd>
+                            <dt>0.01<span>万</span></dt>
+                            </div>
+                            <div class="row col-xs-6">
+                            <dd>起投金额(元)</dd>
+                            <dt>0.01<span>万</span></dt>
+                            </div>
+                          </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-md-6 col-lg-4">
+                        <div class="panel panel-weijinsuo clearfix bg-gray ">
+                          <div class="panel-heading">
+                              <p>
+                                <strong>8</strong><sub>%</sub>
+                                <br/><span>年利率</span>
+                              </p>
+                          </div class="panel-heading-p">
+                          <div class="panel-body">
+                            <h5>新手体验标0650期</h5>
+                            <div class="row col-xs-6">
+                            <dd>起投金额(元)</dd>
+                            <dt>0.01<span>万</span></dt>
+                            </div>
+                            <div class="row col-xs-6">
+                            <dd>起投金额(元)</dd>
+                            <dt>0.01<span>万</span></dt>
+                            </div>
+                            <div class="row col-xs-6">
+                            <dd>起投金额(元)</dd>
+                            <dt>0.01<span>万</span></dt>
+                            </div>
+                            <div class="row col-xs-6">
+                            <dd>起投金额(元)</dd>
+                            <dt>0.01<span>万</span></dt>
+                            </div>
+                          </div>
+                        </div>
+                    </div>
+                </div></div>
+            <div role="tabpanel" class="tab-pane fade" id="tab3">...</div>
+            <div role="tabpanel" class="tab-pane fade" id="tab4">...</div>
+            <div role="tabpanel" class="tab-pane fade" id="tab5">...</div>
+            <div role="tabpanel" class="tab-pane fade" id="tab6">...</div>
+            <div role="tabpanel" class="tab-pane fade" id="tab7">...</div>
+          </div>
+        
+     </section>
+     <!-- / 产品推荐 -->
+     <!-- 新闻列表 -->
+     <section id="news">
+         <div class="container">
+            <div class="row">
+                <div class="col-md-2 col-lg-2 col-lg-offset-2">
+                    <div class="new-title">全部新聞</div>
+                </div>
+                <div class="col-md-2 col-lg-2 clearfix">
+                   <ul class="my-nav">
+                      <li data-title="全部新聞" role="presentation" class="active"><a href="#pill-one"><i class="icon-news01"></i></a></li>
+                      <li data-title="媒體報道" role="presentation"><a href="#pill-two"><i class="icon-news02"></i></a></li>
+                      <li data-title="微金所頭條" role="presentation"><a href="#pill-three"><i class="icon-news03"></i></a></li>
+                      <li data-title="行業資訊" role="presentation"><a href="#pill-four"><i class="icon-news04"></i></a></li>
+                    </ul>
+                </div>
+                <div class="col-md-8 col-lg-5">
+                    <div class="news-tab fadein" role="tabpanel" id="pill-one">
+                        <ul>
+                            <li><a>【微还款】2016年12月10日共23个项目按时完成全部还款</a></li>
+                            <li><a>【微还款】2016年12月10日共23个项目按时完成全部还款</a></li>
+                            <li><a>【微还款】2016年12月10日共23个项目按时完成全部还款</a></li>
+                            <li><a>【微还款】2016年12月10日共23个项目按时完成全部还款</a></li>
+                            <li><a>【微还款】2016年12月10日共23个项目按时完成全部还款</a></li>
+                            <li><a>【微还款】2016年12月10日共23个项目按时完成全部还款</a></li>
+                        </ul>
+                    </div>
+                    <div class="news-tab" role="tabpanel" id="pill-two">
+                            <ul>
+                            <li><a>【微还款】2016年12月10日共23个项目按时完成全部还款</a></li>
+                            <li><a>【微还款】2016年12月10日共23个项目按时完成全部还款</a></li>
+                            <li><a>【微还款】2016年12月10日共23个项目按时完成全部还款</a></li>
+                            <li><a>【微还款】2016年12月10日共23个项目按时完成全部还款</a></li>
+                            <li><a>【微还款】2016年12月10日共23个项目按时完成全部还款</a></li>
+                            <li><a>【微还款】2016年12月10日共23个项目按时完成全部还款</a></li>
+                        </ul>
+                    </div>
+                    <div class="news-tab" role="tabpanel" id="pill-three">
+                         <ul>
+                            <li><a>【微还款】2016年12月10日共23个项目按时完成全部还款</a></li>
+                            <li><a>【微还款】2016年12月10日共23个项目按时完成全部还款</a></li>
+                            <li><a>【微还款】2016年12月10日共23个项目按时完成全部还款</a></li>
+                            <li><a>【微还款】2016年12月10日共23个项目按时完成全部还款</a></li>
+                            <li><a>【微还款】2016年12月10日共23个项目按时完成全部还款</a></li>
+                            <li><a>【微还款】2016年12月10日共23个项目按时完成全部还款</a></li>
+                        </ul>
+                    </div>
+                    <div class="news-tab" role="tabpanel" id="pill-four">
+                         <ul>
+                            <li><a>【微还款】2016年12月10日共23个项目按时完成全部还款</a></li>
+                            <li><a>【微还款】2016年12月10日共23个项目按时完成全部还款</a></li>
+                            <li><a>【微还款】2016年12月10日共23个项目按时完成全部还款</a></li>
+                            <li><a>【微还款】2016年12月10日共23个项目按时完成全部还款</a></li>
+                            <li><a>【微还款】2016年12月10日共23个项目按时完成全部还款</a></li>
+                            <li><a>【微还款】2016年12月10日共23个项目按时完成全部还款</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+     </section>
+     <!-- / 新闻列表  -->
+     <!-- 合作伙伴 -->
+     <!-- 超小屏幕隐藏 -->
+     <section id="partner" class="hidden-xs">
+         <div class="container">
+            <h3 class="text-center">合作伙伴</h3>
+             <ul>
+                 <li><a href="#"><i class="icon-uniE930"></i></a></li>
+                 <li><a href="#"><i class="icon-uniE92F"></i></a></li>
+                 <li><a href="#"><i class="icon-uniE92E"></i></a></li>
+                 <li><a href="#"><i class="icon-uniE92A"></i></a></li>
+                 <li><a href="#"><i class="icon-uniE92A"></i></a></li>
+                 <li><a href="#"><i class="icon-uniE931"></i></a></li>
+                 <li><a href="#"><i class="icon-uniE92C"></i></a></li>
+                 <li><a href="#"><i class="icon-uniE92B"></i></a></li>
+                 <li><a href="#"><i class="icon-uniE92D"></i></a></li>
+             </ul>
+         </div>
+     </section>
+     <!-- /合作伙伴 -->
+     
+     <!-- 脚注区域 -->
+     <footer></footer>
+     <!-- /脚注区域 -->
+     <!-- 特色介绍 -->
+    <!-- jQuery -->
+    <script src="lib/jquery/jquery.js"></script>
+    <!-- bootstrap -->
+    <script src="lib/bootstrap/js/bootstrap.js"></script> 
+    <script src="js/main.js"></script> 
+  </body>
+</html>
